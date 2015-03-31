@@ -8,7 +8,7 @@ public static void main(String[] args) {
     System.out.println("1.In this text-based adventure type the number corresponding to the action you want to perform.");
     System.out.println("2.This game goes by compass direction, not orientation");
     System.out.println("3. Have FUN! (HAHAHA)");
-    System.out.println("Press 1 to begin");
+    System.out.println("Press 1 to begin\n");
     Scanner userInput = new Scanner(System.in);
     int start = userInput.nextInt();
     starting_room();
@@ -31,6 +31,13 @@ public static void starting_room(){
         System.out.println("You did not follow the rules. That's how you lose");
         System.out.println("GAME OVER");
     } 
+}
+//Jack is doing rooms with x-coordinates 1-14
+//Jeff is doing rooms with x-coordinates 15-28
+public static int choice(){
+    Scanner userchoice = new Scanner(System.in);
+    int choice = userchoice.nextInt();
+    return choice;
 }
 public static void transport1(){
 }
@@ -263,6 +270,27 @@ public static void room14_13(){
 public static void room14_14(){
 }
 public static void room15_2(){
+    System.out.println("You are in a maze with openings to the North, East, and West");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. North");
+    System.out.println("2. East");
+    System.out.println("3. West");
+    switch (choice()) {
+        case 1:
+        room15_3();
+        break;
+        case 2:
+        room16_2();
+        break;
+        case 3:
+        room14_2();
+        break;
+        default:
+        room15_2();
+        break;
+    }
+    
+    
 }
 public static void room15_3(){
 }
