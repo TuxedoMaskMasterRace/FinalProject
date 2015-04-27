@@ -52,190 +52,1617 @@ public static void gateroom(){
 public static void endroom(){
 }
 public static void room1_2(){
+    System.out.println("There are openings to the North and to the South");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. North");
+    System.out.println("2. South");
+    switch (choice()) {
+        case 1:
+        room1_3();
+        break;
+        case 2:
+        transport1();
+        break;
+        default:
+        room1_2();
+        break;
+    }
 }
 public static void room1_3(){
+    System.out.println("There are openings to the North and to the South");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. North");
+    System.out.println("2. South");
+    switch (choice()) {
+        case 1:
+        room1_4();
+        break;
+        case 2:
+        room1_2();
+        break;
+        default:
+        room1_3();
+        break;
+    }
 }
 public static void room1_4(){
+    System.out.println("There is an opening to the South... It's a dead end.");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. South");
+    switch (choice()) {
+        case 1:
+        room1_3();
+        break;
+        default:
+        room1_4();
+        break;
+    }
 }
 public static void room1_6(){
+    System.out.println("There is an opening to the East... It's a dead end.");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. East");
+    switch (choice()) {
+        case 1:
+        room2_6();
+        break;
+        default:
+        room1_6();
+        break;
+    }
 }
 public static void room1_8(){
+    System.out.println("There are openings to the North and to the East");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. North");
+    System.out.println("2. East");
+    switch (choice()) {
+        case 1:
+        room1_9();
+        break;
+        case 2:
+        room2_8();
+        break;
+        default:
+        room1_8();
+        break;
+    }
 }
 public static void room1_9(){
+    System.out.println("There are openings to the North and to the South");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. North");
+    System.out.println("2. South");
+    switch (choice()) {
+        case 1:
+        room1_10();
+        break;
+        case 2:
+        room1_8();
+        break;
+        default:
+        room1_9();
+        break;
+    }
 }
 public static void room1_10(){
+    System.out.println("There are openings to the North and to the South");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. North");
+    System.out.println("2. South");
+    switch (choice()) {
+        case 1:
+        room1_11();
+        break;
+        case 2:
+        room1_9();
+        break;
+        default:
+        room1_10();
+        break;
+    }
 }
 public static void room1_11(){
+    System.out.println("There are openings to the North and to the South");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. North");
+    System.out.println("2. South");
+    switch (choice()) {
+        case 1:
+        room1_12();
+        break;
+        case 2:
+        room1_10();
+        break;
+        default:
+        room1_11();
+        break;
+    }
 }
 public static void room1_12(){
+    System.out.println("There are openings to the East and to the South");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. East");
+    System.out.println("2. South");
+    switch (choice()) {
+        case 1:
+        room2_12();
+        break;
+        case 2:
+        room1_11();
+        break;
+        default:
+        room1_10();
+        break;
+    }
 }
 public static void room2_1(){
+    System.out.println("There are openings to the East and to the West");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. East");
+    System.out.println("2. West");
+    switch (choice()) {
+        case 1:
+        room3_1();
+        break;
+        case 2:
+        transport1();
+        break;
+        default:
+        room2_1();
+        break;
+    }
 }
 public static void room2_6(){
+    System.out.println("There are openings to the East and to the West");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. East");
+    System.out.println("2. West");
+    switch (choice()) {
+        case 1:
+        room3_6();
+        break;
+        case 2:
+        room1_6();
+        break;
+        default:
+        room2_6();
+        break;
+    }
 }
 public static void room2_8(){
+    System.out.println("There are openings to the East and to the West");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. East");
+    System.out.println("2. West");
+    switch (choice()) {
+        case 1:
+        room3_8();
+        break;
+        case 2:
+        room1_8();
+        break;
+        default:
+        room2_8();
+        break;
+    }
 }
 public static void room2_12(){
+    System.out.println("There is an openings to the West... It's a dead end.");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. West");
+    switch (choice()) {
+        case 1:
+        room1_12();
+        break;
+        default:
+        room2_12();
+        break;
+    }
 }
 public static void room3_1(){
+    System.out.println("There are openings to the North, East, and West");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. North");
+    System.out.println("2. East");
+    System.out.println("3. West");
+    switch (choice()) {
+        case 1:
+        room3_2();
+        break;
+        case 2:
+        room4_1();
+        break;
+        case 3:
+        room2_1();
+        break;
+        default:
+        room3_1();
+        break;
+    }
 }
 public static void room3_2(){
+    System.out.println("There are openings to the North and to the South");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. North");
+    System.out.println("2. South");
+    switch (choice()) {
+        case 1:
+        room3_3();
+        break;
+        case 2:
+        room3_1();
+        break;
+        default:
+        room3_2();
+        break;
+    }
 }
 public static void room3_3(){
+    System.out.println("There are openings to the North and to the South");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. North");
+    System.out.println("2. South");
+    switch (choice()) {
+        case 1:
+        room3_4();
+        break;
+        case 2:
+        room3_2();
+        break;
+        default:
+        room3_3();
+        break;
+    }
 }
 public static void room3_4(){
+    System.out.println("There are openings to the North and to the South");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. North");
+    System.out.println("2. South");
+    switch (choice()) {
+        case 1:
+        room3_5();
+        break;
+        case 2:
+        room3_3();
+        break;
+        default:
+        room3_4();
+        break;
+    }
 }
 public static void room3_5(){
+    System.out.println("There are openings to the North, East, and South");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. North");
+    System.out.println("2. East");
+    System.out.println("3. South");
+    switch (choice()) {
+        case 1:
+        room3_6();
+        break;
+        case 2:
+        room4_5();
+        break;
+        case 3:
+        room3_4();
+        break;
+        default:
+        room3_5();
+        break;
+    }
 }
 public static void room3_6(){
+    System.out.println("There are openings to the South and to the West");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. South");
+    System.out.println("2. West");
+    switch (choice()) {
+        case 1:
+        room3_4();
+        break;
+        case 2:
+        room2_6();
+        break;
+        default:
+        room3_6();
+        break;
+    }
 }
 public static void room3_8(){
-}
-public static void room3_9(){
+    System.out.println("There are openings to the East and to the West");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. East");
+    System.out.println("2. West");
+    switch (choice()) {
+        case 1:
+        room3_4();
+        break;
+        case 2:
+        room2_8();
+        break;
+        default:
+        room3_8();
+        break;
+    }
 }
 public static void room3_11(){
+    System.out.println("There is an opening to the East... It's a dead end...");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. East");
+    switch (choice()) {
+        case 1:
+        room4_11();
+        break;
+        default:
+        room3_11();
+        break;
+    }
 }
 public static void room4_1(){
+    System.out.println("There are openings to the East and to the West");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. East");
+    System.out.println("2. West");
+    switch (choice()) {
+        case 1:
+        room5_1();
+        break;
+        case 2:
+        room3_1();
+        break;
+        default:
+        room4_1();
+        break;
+    }
 }
 public static void room4_5(){
+    System.out.println("There are openings to the East and to the West");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. East");
+    System.out.println("2. West");
+    switch (choice()) {
+        case 1:
+        room5_5();
+        break;
+        case 2:
+        room3_5();
+        break;
+        default:
+        room4_5();
+        break;
+    }
 }
 public static void room4_8(){
+    System.out.println("There are openings to the North, East and West");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. North");
+    System.out.println("2. East");
+    System.out.println("3. West");
+    switch (choice()) {
+        case 1:
+        room4_9();
+        break;
+        case 2:
+        room5_8();
+        break;
+        case 3:
+        room3_8();
+        break;
+        default:
+        room4_8();
+        break;
+    }
 }
 public static void room4_9(){
+    System.out.println("There is an opening to the East... It's a dead end...");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. South");
+    switch (choice()) {
+        case 1:
+        room4_8();
+        break;
+        default:
+        room4_9();
+        break;
+    }
 }
 public static void room4_11(){
+    System.out.println("There are openings to the North, East and West");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. North");
+    System.out.println("2. East");
+    System.out.println("3. West");
+    switch (choice()) {
+        case 1:
+        room4_12();
+        break;
+        case 2:
+        room5_11();
+        break;
+        case 3:
+        room3_11();
+        break;
+        default:
+        room4_11();
+        break;
+    }
 }
 public static void room4_12(){
+    System.out.println("There are openings to the North and to the South");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. North");
+    System.out.println("2. South");
+    switch (choice()) {
+        case 1:
+        room4_13();
+        break;
+        case 2:
+        room4_11();
+        break;
+        default:
+        room4_12();
+        break;
+    }
 }
 public static void room4_13(){
+    System.out.println("There are openings to the North and to the South");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. North");
+    System.out.println("2. South");
+    switch (choice()) {
+        case 1:
+        gateroom();
+        break;
+        case 2:
+        room4_12();
+        break;
+        default:
+        room4_13();
+        break;
+    }
 }
-public static void room5_1(){
+public static void room5_1(){    
+    System.out.println("There are openings to the North and to the South");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. North");
+    System.out.println("2. East");
+    switch (choice()) {
+        case 1:
+        room5_2();
+        break;
+        case 2:
+        room4_1();
+        break;
+        default:
+        room5_1();
+        break;
+    }
 }
 public static void room5_2(){
+    System.out.println("There are openings to the North and to the South");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. North");
+    System.out.println("2. South");
+    switch (choice()) {
+        case 1:
+        room5_3();
+        break;
+        case 2:
+        room5_1();
+        break;
+        default:
+        room5_2();
+        break;
+    }
 }
 public static void room5_3(){
+    System.out.println("There are openings to the East and to the South");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. East");
+    System.out.println("2. South");
+    switch (choice()) {
+        case 1:
+        room6_3();
+        break;
+        case 2:
+        room5_2();
+        break;
+        default:
+        room5_3();
+        break;
+    }
 }
 public static void room5_5(){
+    System.out.println("There are openings to the North, East, and West");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. North");
+    System.out.println("2. East");
+    System.out.println("3. West");
+    switch (choice()) {
+        case 1:
+        room5_6();
+        break;
+        case 2:
+        room6_5();
+        break;
+        case 3:
+        room4_5();
+        break;
+        default:
+        room5_5();
+        break;
+    }
 }
 public static void room5_6(){
+    System.out.println("There are openings to the North and to the South");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. North");
+    System.out.println("2. South");
+    switch (choice()) {
+        case 1:
+        room5_7();
+        break;
+        case 2:
+        room5_5();
+        break;
+        default:
+        room5_6();
+        break;
+    }
 }
 public static void room5_7(){
+    System.out.println("There are openings to the North and to the South");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. North");
+    System.out.println("2. South");
+    switch (choice()) {
+        case 1:
+        room5_8();
+        break;
+        case 2:
+        room5_6();
+        break;
+        default:
+        room5_7();
+        break;
+    }
 }
 public static void room5_8(){
+    System.out.println("There are openings to the East, South, and West");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. East");
+    System.out.println("2. South");
+    System.out.println("3. West");
+    switch (choice()) {
+        case 1:
+        room6_8();
+        break;
+        case 2:
+        room5_7();
+        break;
+        case 3:
+        room4_8();
+        break;
+        default:
+        room5_8();
+        break;
+    }
 }
 public static void room5_11(){
+    System.out.println("There are openings to the East and to the West");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. East");
+    System.out.println("2. West");
+    switch (choice()) {
+        case 1:
+        room6_11();
+        break;
+        case 2:
+        room4_11();
+        break;
+        default:
+        room5_11();
+        break;
+    }
 }
 public static void room6_3(){
+    System.out.println("There are openings to the East and to the West");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. East");
+    System.out.println("2. West");
+    switch (choice()) {
+        case 1:
+        room7_3();
+        break;
+        case 2:
+        room5_3();
+        break;
+        default:
+        room6_3();
+        break;
+    }
 }
 public static void room6_5(){
+    System.out.println("There are openings to the East and to the West");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. East");
+    System.out.println("2. West");
+    switch (choice()) {
+        case 1:
+        room7_5();
+        break;
+        case 2:
+        room5_5();
+        break;
+        default:
+        room6_5();
+        break;
+    }
 }
 public static void room6_8(){
+    System.out.println("There are openings to the North, East, and West");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. North");
+    System.out.println("2. East");
+    System.out.println("3. West");
+    switch (choice()) {
+        case 1:
+        room6_9();
+        break;
+        case 2:
+        room7_8();
+        break;
+        case 3:
+        room5_8();
+        break;
+        default:
+        room6_8();
+        break;
+    }
 }
 public static void room6_9(){
+    System.out.println("There are openings to the North and to the South");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. North");
+    System.out.println("2. South");
+    switch (choice()) {
+        case 1:
+        room6_10();
+        break;
+        case 2:
+        room6_8();
+        break;
+        default:
+        room6_9();
+        break;
+    }
 }
 public static void room6_10(){
+    System.out.println("There are openings to the North and to the South");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. North");
+    System.out.println("2. South");
+    switch (choice()) {
+        case 1:
+        room6_11();
+        break;
+        case 2:
+        room6_9();
+        break;
+        default:
+        room6_10();
+        break;
+    }
 }
 public static void room6_11(){
+    System.out.println("There are openings to the North and to the West");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. South");
+    System.out.println("2. West");
+    switch (choice()) {
+        case 1:
+        room6_10();
+        break;
+        case 2:
+        room5_11();
+        break;
+        default:
+        room6_11();
+        break;
+    }
 }
 public static void room6_13(){
+    System.out.println("There are openings to the North and to the East");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. North");
+    System.out.println("2. East");
+    switch (choice()) {
+        case 1:
+        room6_14();
+        break;
+        case 2:
+        room7_13();
+        break;
+        default:
+        room6_13();
+        break;
+    }
 }
 public static void room6_14(){
+    System.out.println("There is an opening to the South... It's a dead end.");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. East");
+    switch (choice()) {
+        case 1:
+        room6_13();
+        break;
+        default:
+        room6_14();
+        break;
+    }
 }
 public static void room7_1(){
+    System.out.println("There are openings to the North and to the East");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. North");
+    System.out.println("2. East");
+    switch (choice()) {
+        case 1:
+        room7_2();
+        break;
+        case 2:
+        room8_1();
+        break;
+        default:
+        room7_1();
+        break;
+    }
 }
 public static void room7_2(){
+    System.out.println("There are openings to the North and to the South");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. North");
+    System.out.println("2. South");
+    switch (choice()) {
+        case 1:
+        room7_3();
+        break;
+        case 2:
+        room7_1();
+        break;
+        default:
+        room7_2();
+        break;
+    }
 }
 public static void room7_3(){
+    System.out.println("There are openings to the East, South, and West");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. East");
+    System.out.println("2. South");
+    System.out.println("3. West");
+    switch (choice()) {
+        case 1:
+        room8_3();
+        break;
+        case 2:
+        room7_2();
+        break;
+        default:
+        room7_3();
+        break;
+    }
 }
 public static void room7_5(){
+    System.out.println("There are openings to the East and to the West");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. East");
+    System.out.println("2. West");
+    switch (choice()) {
+        case 1:
+        room8_5();
+        break;
+        case 2:
+        room6_5();
+        break;
+        default:
+        room7_5();
+        break;
+    }
 }
 public static void room7_8(){
+    System.out.println("There are openings to the East and to the West");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. East");
+    System.out.println("2. West");
+    switch (choice()) {
+        case 1:
+        room8_8();
+        break;
+        case 2:
+        room6_8();
+        break;
+        default:
+        room7_8();
+        break;
+    }
 }
 public static void room7_13(){
+    System.out.println("There are openings to the East and to the West");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. East");
+    System.out.println("2. West");
+    switch (choice()) {
+        case 1:
+        room8_13();
+        break;
+        case 2:
+        room6_13();
+        break;
+        default:
+        room7_13();
+        break;
+    }
 }
 public static void room8_1(){
+    System.out.println("There are openings to the East and to the West");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. East");
+    System.out.println("2. West");
+    switch (choice()) {
+        case 1:
+        room9_1();
+        break;
+        case 2:
+        room7_1();
+        break;
+        default:
+        room8_1();
+        break;
+    }
 }
 public static void room8_3(){
+    System.out.println("There are openings to the North and to the West");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. North");
+    System.out.println("2. West");
+    switch (choice()) {
+        case 1:
+        room8_4();
+        break;
+        case 2:
+        room7_3();
+        break;
+        default:
+        room8_3();
+        break;
+    }
 }
 public static void room8_4(){
+    System.out.println("There are openings to the North, East, and South");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. North");
+    System.out.println("2. East");
+    System.out.println("3. South");
+    switch (choice()) {
+        case 1:
+        room8_5();
+        break;
+        case 2:
+        room9_4();
+        break;
+        case 3:
+        room8_3();
+        break;
+        default:
+        room8_4();
+        break;
+    }
 }
 public static void room8_5(){
+    System.out.println("There are openings to the North, East, South, and West");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. North");
+    System.out.println("2. East");
+    System.out.println("3. South");    
+    System.out.println("4. West");
+    switch (choice()) {
+        case 1:
+        room8_6();
+        break;
+        case 2:
+        room9_5();
+        break;
+        case 3:
+        room8_4();
+        break;
+        case 4:
+        room7_5();
+        break;
+        default:
+        room8_5();
+        break;
+    }
 }
 public static void room8_6(){
+    System.out.println("There are openings to the North and to the South");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. North");
+    System.out.println("2. South");
+    switch (choice()) {
+        case 1:
+        room8_7();
+        break;
+        case 2:
+        room8_5();
+        break;
+        default:
+        room8_6();
+        break;
+    }
 }
 public static void room8_7(){
+    System.out.println("There are openings to the North, East, and South");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. North");
+    System.out.println("2. East");
+    System.out.println("3. South");
+    switch (choice()) {
+        case 1:
+        room8_8();
+        break;
+        case 2:
+        room9_7();
+        break;
+        case 3:
+        room8_6();
+        break;
+        default:
+        room8_7();
+        break;
+    }
 }
 public static void room8_8(){
+    System.out.println("There are openings to the South amd to the West");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. South");
+    System.out.println("2. West");
+    switch (choice()) {
+        case 1:
+        room8_7();
+        break;
+        case 2:
+        room7_8();
+        break;
+        default:
+        room8_8();
+        break;
+    }
 }
 public static void room8_10(){
+    System.out.println("There are openings to the North and to the East");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. North");
+    System.out.println("2. East");
+    switch (choice()) {
+        case 1:
+        room8_11();
+        break;
+        case 2:
+        room9_10();
+        break;
+        default:
+        room8_10();
+        break;
+    }
 }
 public static void room8_11(){
+    System.out.println("There are openings to the North and to the South");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. North");
+    System.out.println("2. South");
+    switch (choice()) {
+        case 1:
+        room8_12();
+        break;
+        case 2:
+        room8_10();
+        break;
+        default:
+        room8_11();
+        break;
+    }
 }
 public static void room8_12(){
+    System.out.println("There are openings to the North, East, South, and West");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. North");
+    System.out.println("2. South");
+    switch (choice()) {
+        case 1:
+        room8_11();
+        break;
+        case 2:
+        room8_13();
+        break;
+        default:
+        room8_12();
+        break;
+    }
 }
 public static void room8_13(){
+    System.out.println("There are openings to the North, South, and West");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. North");
+    System.out.println("3. South");    
+    System.out.println("4. West");
+    switch (choice()) {
+        case 1:
+        room8_14();
+        break;
+        case 2:
+        room8_12();
+        break;
+        case 3:
+        room7_13();
+        break;
+        default:
+        room8_13();
+        break;
+    }
 }
 public static void room8_14(){
+    System.out.println("There are openings to the East, and South");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. East");
+    System.out.println("2. South");
+    switch (choice()) {
+        case 1:
+        room8_13();
+        break;
+        case 2:
+        room9_14();
+        break;
+        default:
+        room8_5();
+        break;
+    }
 }
 public static void room9_1(){
+    System.out.println("There are openings to the East and to the West");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. East");  
+    System.out.println("2. West");
+    switch (choice()) {
+        case 1:
+        room10_1();
+        break;
+        case 2:
+        room8_1();
+        break;
+        default:
+        room9_1();
+        break;
+    }
 }
 public static void room9_4(){
+    System.out.println("There are openings to the North and to the West");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. North");
+    System.out.println("2. West");
+    switch (choice()) {
+        case 1:
+        room9_5();
+        break;
+        case 2:
+        room8_4();
+        break;
+        default:
+        room9_4();
+        break;
+    }
 }
 public static void room9_5(){
+    System.out.println("There are openings to the East, South, and West");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. East");
+    System.out.println("2. South");    
+    System.out.println("3. West");
+    switch (choice()) {
+        case 1:
+        room10_5();
+        break;
+        case 2:
+        room9_4();
+        break;
+        case 3:
+        room8_5();
+        break;
+        default:
+        room9_5();
+        break;
+    }
 }
 public static void room9_7(){
+    System.out.println("There are openings to the East and to the West");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. East");  
+    System.out.println("2. West");
+    switch (choice()) {
+        case 1:
+        room10_7();
+        break;
+        case 2:
+        room8_7();
+        break;
+        default:
+        room9_7();
+        break;
+    }
 }
 public static void room9_10(){
+    System.out.println("There are openings to the East and to the West");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. East");  
+    System.out.println("2. West");
+    switch (choice()) {
+        case 1:
+        room10_10();
+        break;
+        case 2:
+        room8_10();
+        break;
+        default:
+        room9_10();
+        break;
+    }
 }
 public static void room9_14(){
+    System.out.println("There are openings to the East and to the West");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. East");  
+    System.out.println("2. West");
+    switch (choice()) {
+        case 1:
+        room10_14();
+        break;
+        case 2:
+        room8_14();
+        break;
+        default:
+        room9_14();
+        break;
+    }
 }
 public static void room10_1(){
+    System.out.println("There are openings to the East and to the West");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. East");  
+    System.out.println("2. West");
+    switch (choice()) {
+        case 1:
+        room11_1();
+        break;
+        case 2:
+        room9_1();
+        break;
+        default:
+        room10_1();
+        break;
+    }
 }
 public static void room10_5(){
+    System.out.println("There are openings to the East and to the West");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. East");  
+    System.out.println("2. West");
+    switch (choice()) {
+        case 1:
+        room11_5();
+        break;
+        case 2:
+        room9_5();
+        break;
+        default:
+        room10_5();
+        break;
+    }
 }
 public static void room10_7(){
+    System.out.println("There are openings to the East and to the West");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. East");  
+    System.out.println("2. West");
+    switch (choice()) {
+        case 1:
+        room11_7();
+        break;
+        case 2:
+        room9_7();
+        break;
+        default:
+        room10_7();
+        break;
+    }
 }
 public static void room10_9(){
+    System.out.println("There are openings to the North and to the East");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. North");  
+    System.out.println("2. East");
+    switch (choice()) {
+        case 1:
+        room10_10();
+        break;
+        case 2:
+        room11_9();
+        break;
+        default:
+        room10_9();
+        break;
+    }
 }
 public static void room10_10(){
+    System.out.println("There are openings to the South and to the West");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. South");  
+    System.out.println("2. West");
+    switch (choice()) {
+        case 1:
+        room10_9();
+        break;
+        case 2:
+        room9_10();
+        break;
+        default:
+        room10_10();
+        break;
+    }
 }
 public static void room10_12(){
+    System.out.println("There are openings to the North and to the East");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. North");  
+    System.out.println("2. East");
+    switch (choice()) {
+        case 1:
+        room10_13();
+        break;
+        case 2:
+        room11_12();
+        break;
+        default:
+        room10_12();
+        break;
+    }
 }
 public static void room10_13(){
+    System.out.println("There are openings to the North and to the South");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. North");  
+    System.out.println("2. South");
+    switch (choice()) {
+        case 1:
+        room10_14();
+        break;
+        case 2:
+        room10_12();
+        break;
+        default:
+        room10_13();
+        break;
+    }
 }
 public static void room10_14(){
+    System.out.println("There are openings to the South and to the West");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. South");  
+    System.out.println("2. West");
+    switch (choice()) {
+        case 1:
+        room10_13();
+        break;
+        case 2:
+        room9_14();
+        break;
+        default:
+        room10_14();
+        break;
+    }
 }
 public static void room11_1(){
+    System.out.println("There are openings to the North and to the West");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. North");  
+    System.out.println("2. West");
+    switch (choice()) {
+        case 1:
+        room11_2();
+        break;
+        case 2:
+        room10_1();
+        break;
+        default:
+        room11_1();
+        break;
+    }
 }
 public static void room11_2(){
+    System.out.println("There are openings to the East and to the South");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. East");  
+    System.out.println("2. South");
+    switch (choice()) {
+        case 1:
+        room12_2();
+        break;
+        case 2:
+        room11_1();
+        break;
+        default:
+        room11_2();
+        break;
+    }
 }
 public static void room11_5(){
+    System.out.println("You are in a maze with openings to the North, East, and West");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. North");
+    System.out.println("2. East");
+    System.out.println("3. West");
+    switch (choice()) {
+        case 1:
+        room11_6();
+        break;
+        case 2:
+        room12_5();
+        break;
+        case 3:
+        room10_5();
+        break;
+        default:
+        room11_5();
+        break;
+    }
 }
 public static void room11_6(){
+    System.out.println("There are openings to the North and to the South");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. North");  
+    System.out.println("2. South");
+    switch (choice()) {
+        case 1:
+        room11_7();
+        break;
+        case 2:
+        room11_5();
+        break;
+        default:
+        room11_6();
+        break;
+    }
 }
 public static void room11_7(){
+    System.out.println("You are in a maze with openings to the North, South, and West");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. North");
+    System.out.println("2. South");
+    System.out.println("3. West");
+    switch (choice()) {
+        case 1:
+        room11_8();
+        break;
+        case 2:
+        room11_6();
+        break;
+        case 3:
+        room10_5();
+        break;
+        default:
+        room11_5();
+        break;
+    }
 }
 public static void room11_8(){
+    System.out.println("You are in a maze with openings to the North and to the South");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. North");
+    System.out.println("2. South");
+    switch (choice()) {
+        case 1:
+        room11_9();
+        break;
+        case 2:
+        room11_7();
+        break;
+        default:
+        room11_8();
+        break;
+    }
 }
 public static void room11_9(){
+    System.out.println("There are openings to the South and to the West");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. South");  
+    System.out.println("2. West");
+    switch (choice()) {
+        case 1:
+        room11_8();
+        break;
+        case 2:
+        room10_9();
+        break;
+        default:
+        room11_9();
+        break;
+    }
 }
 public static void room11_12(){
+    System.out.println("There are openings to the East and to the West");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. East");  
+    System.out.println("2. West");
+    switch (choice()) {
+        case 1:
+        room12_12();
+        break;
+        case 2:
+        room10_12();
+        break;
+        default:
+        room11_12();
+        break;
+    }
 }
 public static void room12_2(){
+    System.out.println("You are in a maze with openings to the North, East, and West");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. North");
+    System.out.println("2. East");
+    System.out.println("3. West");
+    switch (choice()) {
+        case 1:
+        room12_3();
+        break;
+        case 2:
+        room13_2();
+        break;
+        case 3:
+        room11_2();
+        break;
+        default:
+        room12_2();
+        break;
+    }
 }
 public static void room12_3(){
+    System.out.println("You are in a maze with openings to the North and to the South");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. North");
+    System.out.println("2. South");
+    switch (choice()) {
+        case 1:
+        room12_4();
+        break;
+        case 2:
+        room12_2();
+        break;
+        default:
+        room12_3();
+        break;
+    }
 }
 public static void room12_4(){
+    System.out.println("You are in a maze with openings to the North and to the South");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. North");
+    System.out.println("2. South");
+    switch (choice()) {
+        case 1:
+        room12_5();
+        break;
+        case 2:
+        room12_3();
+        break;
+        default:
+        room12_4();
+        break;
+    }
 }
 public static void room12_5(){
+    System.out.println("There are openings to the East, South, and West");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. East");
+    System.out.println("2. South");
+    System.out.println("3. West");
+    switch (choice()) {
+        case 1:
+        room13_5();
+        break;
+        case 2:
+        room12_4();
+        break;
+        case 3:
+        room11_5();
+        break;
+        default:
+        room12_5();
+        break;
+    }
 }
 public static void room12_11(){
+    System.out.println("There is an openings to the North... It's a dead end.");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. North");
+    switch (choice()) {
+        case 1:
+        room12_12();
+        break;
+        default:
+        room12_11();
+        break;
+    }
 }
 public static void room12_12(){
+    System.out.println("There are openings to the North, East, South, and West");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. North");
+    System.out.println("2. East");
+    System.out.println("3. South");    
+    System.out.println("4. West");
+    switch (choice()) {
+        case 1:
+        room12_13();
+        break;
+        case 2:
+        room13_12();
+        break;
+        case 3:
+        room12_11();
+        break;
+        case 4:
+        room11_12();
+        break;
+        default:
+        room12_12();
+        break;
+    }
 }
 public static void room12_13(){
+    System.out.println("You are in a maze with openings to the North and to the South");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. North");
+    System.out.println("2. South");
+    switch (choice()) {
+        case 1:
+        room12_14();
+        break;
+        case 2:
+        room12_12();
+        break;
+        default:
+        room12_13();
+        break;
+    }
 }
 public static void room12_14(){
+    System.out.println("You are in a maze with openings to the East and to the South");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. East");
+    System.out.println("2. South");
+    switch (choice()) {
+        case 1:
+        room13_14();
+        break;
+        case 2:
+        room12_13();
+        break;
+        default:
+        room12_14();
+        break;
+    }
 }
 public static void room13_1(){
 }
@@ -289,8 +1716,6 @@ public static void room15_2(){
         room15_2();
         break;
     }
-    
-    
 }
 public static void room15_3(){
 }
