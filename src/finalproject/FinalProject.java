@@ -1,6 +1,9 @@
 package finalproject;
 import java.util.Scanner;
 public class FinalProject {
+    boolean key;
+    boolean button;
+    boolean teleport;
 public static void main(String[] args) {
     System.out.println("You are about to embark on a text based adventure!");
     System.out.println("This game is meant to make you frustrated");
