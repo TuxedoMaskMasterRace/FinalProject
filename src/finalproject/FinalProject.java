@@ -1,6 +1,8 @@
 package finalproject;
 import java.util.Scanner;
 public class FinalProject {
+    public static boolean button = false;
+    public static boolean key = false;
 public static void main(String[] args) {
     System.out.println("You are about to embark on a text based adventure!");
     System.out.println("This game is meant to make you frustrated");
@@ -16,7 +18,7 @@ public static void main(String[] args) {
 public static void starting_room(){
     System.out.println("\n\n\n\n\n\n\n\n");
     System.out.println("THE MAZE");
-    System.out.println("Created by Jeffrey Dennis, Jack Frazier and Brandon Roy");
+    System.out.println("Created by Jeffrey Dennis, Jack Frazier");
     System.out.println("\n\n\n\n\n\n\n\n");
     System.out.println("Before you enter we are giving you the following");
     System.out.println("1.A Compass (To Tell Direction");
@@ -40,16 +42,184 @@ public static int choice(){
     return choice;
 }
 public static void transport1(){
+    
+    if(button){
+    System.out.println("There are openings to the North and to the East");
+    System.out.println("Also there seems to be a hole in the wall to the West");
+    System.out.println("There is a strange light emerging from it");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. North");
+    System.out.println("2. East");
+    System.out.println("3.South");
+    
+    switch (choice()) {
+        case 1:
+        room1_2();
+        break;
+        case 2:
+        room2_1();
+        break;
+        case 3:
+        transport2();
+        break; 
+        default:
+        transport1();
+        break;
+        }
+    }
+    else{
+    System.out.println("There are openings to the North and to the East");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. North");
+    System.out.println("2. East");
+    
+    switch (choice()) {
+        case 1:
+        room1_2();
+        break;
+        case 2:
+        room2_1();
+        break;
+        default:
+        transport1();
+        break;
+    }
+}
 }
 public static void transport2(){
+    
+    if(button){
+    System.out.println("There are openings to the East, South and to the West");
+    System.out.println("Also there seems to be a hole in the wall to the North");
+    System.out.println("There is a strange light emerging from it");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. North");
+    System.out.println("2. East");
+    System.out.println("3. South");
+    System.out.println("4. West");
+    switch (choice()) {
+        case 1:
+        transport1();
+        break;
+        case 2:
+        room23_14();
+        break;
+        case 3:
+        room22_13();
+        break;
+        case 4:
+        room21_14();
+        break;
+        default:
+        transport2();
+        break;
+        }
+    }
+    else{
+    System.out.println("There are openings to the East, South and to the West");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. East");
+    System.out.println("2. South");
+    System.out.println("3. West");
+    
+    switch (choice()) {
+        case 1:
+        room23_14();
+        break;
+        case 2:
+        room22_13();
+        break;
+        case 3:
+        room21_14();
+        break;
+        default:
+        transport2();
+        break;
+    }
+}
 }
 public static void button_room(){
+    System.out.println("There is an opening to the North... It's a dead end.");
+    System.out.println("However, there is a button on the wall");
+    System.out.println("What do you do?");
+    System.out.println("1. North");
+    System.out.println("2. Push Button");
+    switch (choice()) {
+        case 1:
+        room24_2();
+        break;
+        case 2:
+        System.out.println("You pushed the button");
+        button = true;
+        button_room();
+        break;
+        default:
+        button_room();
+        break;
+    }
 }
 public static void keyroom(){
+    System.out.println("There is an opening to the North... It's a dead end.");
+    System.out.println("However, there is a key on the floor");
+    System.out.println("What do you do?");
+    System.out.println("1. North");
+    System.out.println("2. Grab Key");
+    switch (choice()) {
+        case 1:
+        room28_2();
+        break;
+        case 2:
+        System.out.println("You grabbed the key");
+        button = true;
+        keyroom();
+        break;
+        default:
+        keyroom();
+        break;
+    }
 }
 public static void gateroom(){
+    if(key){
+    System.out.println("There are openings to the South and to the West");
+    System.out.println("However, there is a gate blocking the path to the West");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. South");
+    System.out.println("2. Open gate and go West");
+    switch (choice()) {
+        case 1:
+        room4_13();
+        break;
+        case 2:
+        endroom();
+        break;
+        default:
+        gateroom();
+        break;
+    }
+    }
+    else{
+    System.out.println("There are openings to the South and to the West");
+    System.out.println("However, there is a gate blocking the path to the West");
+    System.out.println("You need a key to open the gate");
+    System.out.println("Which way do you choose?");
+    System.out.println("1. South");
+    switch (choice()) {
+        case 1:
+        room4_13();
+        break;
+        default:
+        room1_2();
+        break;
+    }
+    }
 }
 public static void endroom(){
+   System.out.println("You have done it");
+   System.out.println("You have beaten it");
+   System.out.println("You have completed");
+   System.out.println("\n\n\n\n\n\n\n\n");
+    System.out.println("THE MAZE");
+    System.out.println("Created by Jeffrey Dennis & Jack Frazier");
 }
 public static void room1_2(){
     System.out.println("There are openings to the North and to the South");
