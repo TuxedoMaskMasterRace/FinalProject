@@ -1042,6 +1042,9 @@ public static void room7_3(){
         case 2:
         room7_2();
         break;
+        case 3:
+        room6_3();
+        break;
         default:
         room7_3();
         break;
