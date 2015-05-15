@@ -18,7 +18,7 @@ public static void main(String[] args) {
 public static void starting_room(){
     System.out.println("\n\n\n");
     System.out.println("THE MAZE");
-    System.out.println("Created by Jeffrey Dennis, Brandon Roy and Jack Frazier");
+    System.out.println("Created by Jeffrey Dennis and Jack Frazier");
     System.out.println("\n\n\n");
     System.out.println("Before you enter we are giving you the following");
     System.out.println("1.A Compass (To Tell Direction");
