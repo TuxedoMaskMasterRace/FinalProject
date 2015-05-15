@@ -1,35 +1,29 @@
 package finalproject;
 import java.util.Scanner;
-public class FinalProject {
-    public static boolean button = false;
-    public static boolean key = false;
+public class FinalProject{
+        public static boolean button = false;
+        public static boolean key = false;
 public static void main(String[] args) {
     System.out.println("You are about to embark on a text based adventure!");
     System.out.println("This game is meant to make you frustrated");
     System.out.println("Here are some simple rules");
-    System.out.println("1. In this text-based adventure type the number corresponding to the action you want to perform.");
-    System.out.println("2. This game goes by compass direction, not orientation");
+    System.out.println("1.In this text-based adventure type the number corresponding to the action you want to perform.");
+    System.out.println("2.This game goes by compass direction, not orientation");
     System.out.println("3. Have FUN! (HAHAHA)");
     System.out.println("Press 1 to begin");
     Scanner userInput = new Scanner(System.in);
     int start = userInput.nextInt();
-    if (start == 1){
-        starting_room();
-    }
-    else{
-        System.out.println("You did not follow the rules. That's how you lose");
-        System.out.println("GAME OVER");
-    } 
+    starting_room();
     }  
 public static void starting_room(){
     System.out.println("\n\n\n");
     System.out.println("THE MAZE");
-    System.out.println("Created by Jeffrey Dennis, Jack Frazier");
+    System.out.println("Created by Jeffrey Dennis, Brandon Roy and Jack Frazier");
     System.out.println("\n\n\n");
     System.out.println("Before you enter we are giving you the following");
     System.out.println("1.A Compass (To Tell Direction");
     System.out.println("2.That's it(Hence the laughter in rule #3)");
-    System.out.println("3.Press 3 to go north and enter the maze");
+    System.out.println("3. Press 3 to go north and enter the maze");
     Scanner userInput = new Scanner(System.in);
     int start2 = userInput.nextInt();
     if (start2 == 3){
@@ -40,12 +34,15 @@ public static void starting_room(){
         System.out.println("GAME OVER");
     } 
 }
-//Jack is doing rooms with x-coordinates 1-14
-//Jeff is doing rooms with x-coordinates 15-28
 public static int choice(){
     Scanner userchoice = new Scanner(System.in);
-    int choice = userchoice.nextInt();
-    return choice;
+    if(!userchoice.hasNextInt()){
+        userchoice.next();
+    } else {
+        int choice = userchoice.nextInt();
+        return choice;
+    }
+    return -1;
 }
 public static void transport1(){
     
@@ -56,7 +53,7 @@ public static void transport1(){
     System.out.println("Which way do you choose?");
     System.out.println("1. North");
     System.out.println("2. East");
-    System.out.println("3. South");
+    System.out.println("3.South");
     
     switch (choice()) {
         case 1:
@@ -165,7 +162,6 @@ public static void button_room(){
     }
 }
 public static void keyroom(){
-    if(key=false){
     System.out.println("There is an opening to the North... It's a dead end.");
     System.out.println("However, there is a key on the floor");
     System.out.println("What do you do?");
@@ -177,28 +173,13 @@ public static void keyroom(){
         break;
         case 2:
         System.out.println("You grabbed the key");
-        key = true;
+        button = true;
         keyroom();
         break;
         default:
         keyroom();
         break;
     }
-    }
-    else{
-    System.out.println("There is an opening to the North... It's a dead end.");
-    System.out.println("However, there is a key on the floor");
-    System.out.println("What do you do?");
-    System.out.println("1. North");
-    switch (choice()) {
-        case 1:
-        room28_2();
-        break;
-        default:
-        keyroom();
-        break;
-    }
-}
 }
 public static void gateroom(){
     if(key){
@@ -241,7 +222,7 @@ public static void endroom(){
    System.out.println("You have completed");
    System.out.println("\n\n\n\n\n\n\n\n");
     System.out.println("THE MAZE");
-    System.out.println("Created by Jeffrey Dennis & Jack Frazier");
+    System.out.println("Created by Jeffrey Dennis, Brandon Roy and Jack Frazier");
 }
 public static void room1_2(){
     System.out.println("There are openings to the North and to the South");
@@ -1271,7 +1252,7 @@ public static void room8_11(){
     }
 }
 public static void room8_12(){
-    System.out.println("There are openings to the North, East, South, and West");
+    System.out.println("There are openings to the North and to the South");
     System.out.println("Which way do you choose?");
     System.out.println("1. North");
     System.out.println("2. South");
@@ -1291,8 +1272,8 @@ public static void room8_13(){
     System.out.println("There are openings to the North, South, and West");
     System.out.println("Which way do you choose?");
     System.out.println("1. North");
-    System.out.println("3. South");    
-    System.out.println("4. West");
+    System.out.println("2. South");    
+    System.out.println("3. West");
     switch (choice()) {
         case 1:
         room8_14();
@@ -4151,4 +4132,4 @@ break;
 }
 }
 }
-//Boom Done!
+//Boom Done
